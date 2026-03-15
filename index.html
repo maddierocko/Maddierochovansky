@@ -8,12 +8,12 @@
 <meta name="robots" content="index, follow">
 <meta property="og:title" content="Maddie Rochovansky &mdash; Business Operations &amp; Process Improvement">
 <meta property="og:description" content="Operations and finance professional with 3+ years building workflow automation, vendor systems, and executive reporting across AP, AR, and IT functions. Open to remote Business Operations, Process Improvement, and RevOps roles.">
-<meta property="og:url" content="https://rochovanskym.github.io/">
+<meta property="og:url" content="https://maddierochovansky.com/">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Maddie Rochovansky &mdash; Business Operations &amp; Process Improvement">
 <meta name="twitter:description" content="Operations and finance professional with 3+ years building workflow automation, vendor systems, and executive reporting across AP, AR, and IT functions. Open to remote Business Operations, Process Improvement, and RevOps roles.">
-<link rel="canonical" href="https://rochovanskym.github.io/">
+<link rel="canonical" href="https://maddierochovansky.com/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230a0a0c'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-size='18' fill='%23c9a84c'%3EM%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,6 +41,7 @@ nav{position:fixed;top:0;left:0;right:0;height:var(--nav-h);background:rgba(10,1
 .nav-links{display:flex;align-items:center;gap:2rem;list-style:none}
 .nav-links a{color:var(--text2);text-decoration:none;font-size:0.74rem;letter-spacing:0.1em;text-transform:uppercase;transition:color 0.2s}
 .nav-links a:hover{color:var(--gold)}
+.nav-links a.nav-active{color:var(--gold)}
 .ham{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px}
 .ham span{display:block;width:22px;height:1px;background:var(--text2);transition:background 0.2s}
 .ham:hover span{background:var(--gold)}
@@ -54,29 +55,26 @@ section{padding:clamp(3rem,6vw,5rem) 0}
 .rule{height:1px;background:var(--border);max-width:1080px;margin:0 auto}
 .label{display:inline-flex;align-items:center;gap:0.75rem;font-size:0.68rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);font-weight:500;margin-bottom:0.75rem}
 .label::before{content:"";width:24px;height:1px;background:var(--gold-border)}
-.sec-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4.5vw,3.2rem);font-weight:300;line-height:1.15;color:var(--text);margin-bottom:2rem;letter-spacing:-0.01em}
+.sec-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4.5vw,3.2rem);font-weight:300;line-height:1.1;color:var(--text);margin-bottom:2rem;letter-spacing:-0.015em}
 .sec-title em{font-style:italic;color:var(--gold)}
 #hero{min-height:100vh;display:flex;align-items:center;padding-top:var(--nav-h)}
 .hero-wrap{padding-top:3rem;padding-bottom:3rem;max-width:1100px}
 .hero-layout{display:grid;grid-template-columns:1fr 220px;gap:2.5rem;align-items:flex-start}
 .hero-text{max-width:640px}
 .hero-photo{display:flex;justify-content:center;align-items:flex-start;padding-top:5rem}
-.photo-placeholder{width:200px;height:200px;border-radius:50%;border:1px solid var(--border2);background:var(--bg2);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
 .photo-img{width:200px;height:200px;border-radius:50%;border:1px solid var(--border2);object-fit:cover;display:block}
-.photo-inner{display:flex;flex-direction:column;align-items:center;gap:0.75rem;color:var(--text3)}
-.photo-inner span{font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase}
 .hero-fun{margin-bottom:1.5rem}
 .btn-fun{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.25);border-radius:100px;padding:0.4rem 1rem;font-size:0.75rem;color:var(--text);cursor:pointer;font-family:'DM Sans',sans-serif;letter-spacing:0.04em;transition:border-color 0.2s,color 0.2s,background 0.2s}
 .btn-fun:hover{border-color:var(--gold-border);color:var(--gold);background:rgba(201,168,76,0.07)}
 .fun-text{font-size:0.85rem;color:var(--text2);font-weight:300;line-height:1.7;margin-top:0.75rem;min-height:1.5rem;font-style:italic;opacity:0;transition:opacity 0.3s}
 .fun-text.visible{opacity:1}
-@media(max-width:768px){.hero-layout{grid-template-columns:1fr;gap:2rem}.hero-photo{order:-1;padding-top:0}.photo-placeholder{width:140px;height:140px}.photo-img{width:140px;height:140px}.hero-stats-grid{grid-template-columns:1fr!important}}
+@media(max-width:768px){.hero-layout{grid-template-columns:1fr;gap:2rem}.hero-photo{order:-1;padding-top:0}.photo-img{width:140px;height:140px}.hero-stats-grid{grid-template-columns:1fr!important}}
 .badge{display:inline-flex;align-items:center;gap:0.5rem;border:1px solid var(--gold-border);border-radius:100px;padding:0.4rem 1rem;font-size:0.68rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);font-weight:500;margin-bottom:2.25rem}
 .badge-dot{width:6px;height:6px;background:#4ade80;border-radius:50%;flex-shrink:0;animation:pdot 2.5s ease-in-out infinite}
 @keyframes pdot{0%,100%{opacity:1;transform:scale(1)}50%{opacity:0.4;transform:scale(0.7)}}
-.hero-title{font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,8.5vw,6.5rem);font-weight:300;line-height:1.03;letter-spacing:-0.02em;color:var(--text);margin-bottom:1.5rem}
+.hero-title{font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,8.5vw,6.5rem);font-weight:300;line-height:1.0;letter-spacing:-0.025em;color:var(--text);margin-bottom:1.75rem}
 .hero-title span{color:var(--gold);font-style:italic}
-.hero-sub{font-size:clamp(0.88rem,1.6vw,1rem);color:var(--text2);font-weight:300;line-height:1.85;max-width:540px;margin-bottom:2.75rem}
+.hero-sub{font-size:clamp(0.95rem,1.8vw,1.08rem);color:var(--text2);font-weight:300;line-height:1.8;max-width:540px;margin-bottom:2.75rem}
 .hero-actions{display:flex;flex-wrap:wrap;gap:0.75rem;margin-bottom:3rem}
 .btn-outline{display:inline-flex;align-items:center;gap:0.45rem;padding:0.6rem 1.3rem;border:1px solid rgba(255,255,255,0.25);border-radius:100px;color:var(--text);font-size:0.78rem;text-decoration:none;transition:all 0.2s;font-family:'DM Sans',sans-serif;background:rgba(255,255,255,0.05);cursor:pointer;letter-spacing:0.08em;text-transform:uppercase;font-weight:500}
 .btn-outline:hover{border-color:var(--gold-border);color:var(--gold);background:rgba(201,168,76,0.07)}
@@ -104,7 +102,8 @@ section{padding:clamp(3rem,6vw,5rem) 0}
 .blog-desc{font-size:0.82rem;color:var(--text2);line-height:1.7;font-weight:300;margin-bottom:1.25rem;flex:1}
 .blog-footer{display:flex;align-items:center;justify-content:space-between;padding-top:1rem;border-top:1px solid var(--border);margin-top:auto}
 .blog-status{font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--text3);font-weight:500}
-.blog-more-wrap{margin-top:1.25rem;text-align:center}
+.btn-substack{display:inline-flex;align-items:center;gap:0.5rem;padding:0.5rem 1.1rem;border:1px solid var(--gold-border);border-radius:100px;color:var(--gold);font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;font-family:'DM Sans',sans-serif;font-weight:500;transition:all 0.2s;white-space:nowrap;background:transparent}
+.btn-substack:hover{background:rgba(201,168,76,0.1)}
 .blog-hidden{display:none}
 .blog-more-wrap.expanded .blog-hidden{display:grid}
 #blog-toggle{background:none;border:1px solid var(--border2);border-radius:100px;color:var(--text2);font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;padding:0.55rem 1.4rem;cursor:pointer;font-family:'DM Sans',sans-serif;transition:all 0.2s}
@@ -130,6 +129,8 @@ section{padding:clamp(3rem,6vw,5rem) 0}
 .proj-filter-btn{background:none;border:1px solid var(--border2);border-radius:100px;padding:0.35rem 0.9rem;font-size:0.68rem;color:var(--text3);cursor:pointer;font-family:'DM Sans',sans-serif;letter-spacing:0.07em;text-transform:uppercase;transition:all 0.2s}
 .proj-filter-btn:hover{border-color:var(--gold-border);color:var(--gold)}
 .proj-filter-btn.active{background:var(--gold);border-color:var(--gold);color:#0a0a0c;font-weight:600}
+.proj-filter-count{opacity:0.6;font-weight:400}
+.proj-filter-btn.active .proj-filter-count{opacity:0.7}
 .proj.hidden{display:none}
 .proj-badges{display:flex;gap:0.4rem;align-items:center;flex-wrap:wrap;margin-bottom:0.4rem}
 .proj-status-badge{font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;padding:0.2rem 0.55rem;border-radius:100px}
@@ -209,11 +210,6 @@ section{padding:clamp(3rem,6vw,5rem) 0}
 .contact-opt:hover{border-color:var(--gold-border)}
 .contact-opt-icon{width:32px;height:32px;border-radius:8px;background:var(--gold-dim);border:1px solid var(--gold-border);display:flex;align-items:center;justify-content:center;font-size:0.78rem;flex-shrink:0;color:var(--gold);font-family:'DM Sans',sans-serif;font-weight:500}
 .contact-opt-label{font-size:0.875rem;color:var(--text);font-weight:400;letter-spacing:0.02em}
-.services-list{display:flex;flex-direction:column;gap:0.75rem}
-.service{padding:1.1rem 1.25rem;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);transition:border-color 0.2s}
-.service:hover{border-color:var(--gold-border)}
-.service-name{font-weight:500;color:var(--text);font-size:0.88rem;margin-bottom:0.25rem}
-.service-desc{font-size:0.78rem;color:var(--text2);line-height:1.5;font-weight:300}
 .modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.7);backdrop-filter:blur(8px);z-index:300;align-items:center;justify-content:center;padding:1.5rem}
 .modal-overlay.open{display:flex}
 .modal-box{background:var(--bg2);border:1px solid var(--border2);border-radius:16px;padding:2rem;width:100%;max-width:460px;position:relative}
@@ -234,7 +230,7 @@ section{padding:clamp(3rem,6vw,5rem) 0}
 .form-success p{font-size:0.9rem;color:var(--text2);line-height:1.6}
 footer{border-top:1px solid var(--border);padding:1.75rem clamp(1.5rem,5vw,3.5rem);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
 .foot-text{font-size:0.75rem;color:var(--text3)}
-.foot-links{display:flex;gap:1.5rem}
+.foot-links{display:flex;gap:1.5rem;flex-wrap:wrap}
 .foot-links a{font-size:0.75rem;color:var(--text3);text-decoration:none;transition:color 0.2s}
 .foot-links a:hover{color:var(--gold)}
 .fade{opacity:0;transform:translateY(18px);transition:opacity 0.6s ease,transform 0.6s ease}
@@ -290,6 +286,7 @@ footer{border-top:1px solid var(--border);padding:1.75rem clamp(1.5rem,5vw,3.5re
     <li><a href="#experience">Experience</a></li>
     <li><a href="#certifications">Certifications</a></li>
     <li><a href="#contact">Contact</a></li>
+    <li><a href="/work-with-me" style="color:var(--gold)">Work With Me</a></li>
   </ul>
   <button class="ham" id="ham" onclick="toggleMob()" aria-label="Menu">
     <span></span><span></span><span></span>
@@ -303,6 +300,7 @@ footer{border-top:1px solid var(--border);padding:1.75rem clamp(1.5rem,5vw,3.5re
   <a href="#experience" onclick="closeMob()">Experience</a>
   <a href="#certifications" onclick="closeMob()">Certifications</a>
   <a href="#contact" onclick="closeMob()">Contact</a>
+  <a href="/work-with-me" onclick="closeMob()" style="color:var(--gold)">Work With Me</a>
 </div>
 
 <main>
@@ -355,7 +353,7 @@ footer{border-top:1px solid var(--border);padding:1.75rem clamp(1.5rem,5vw,3.5re
 
       </div>
       <div class="hero-photo fade">
-        <img src="photo.jpg" alt="Maddie Rochovansky" class="photo-img">
+        <img src="photo.jpg" alt="Maddie Rochovansky" class="photo-img" loading="lazy">
       </div>
     </div>
   </div>
@@ -372,8 +370,7 @@ footer{border-top:1px solid var(--border);padding:1.75rem clamp(1.5rem,5vw,3.5re
         <p style="font-size:0.95rem;color:var(--text2);line-height:1.85;font-weight:300;margin-bottom:1.1rem">Most of my work starts the same way. A messy process, a lot of manual work, and someone asking why it is done this way.</p>
         <p style="font-size:0.95rem;color:var(--text2);line-height:1.85;font-weight:300;margin-bottom:1.1rem">I work in operations and process improvement with experience across AP and AR, IT operations, vendor management, and system automation. Pretty good at spotting where processes break before they do.</p>
         <p style="font-size:0.95rem;color:var(--text2);line-height:1.85;font-weight:300;margin-bottom:1.1rem">What makes my approach different is that I understand both sides of the work. The financial discipline that comes from running AP and AR, and the systems thinking required to build automation from scratch.</p>
-        <p style="font-size:0.95rem;color:var(--text2);line-height:1.85;font-weight:300;margin-bottom:1.1rem">I own projects end to end. I document everything so the work survives my absence. And I communicate like a normal human.</p>
-        <p style="font-size:0.88rem;color:var(--gold);line-height:1.75;font-weight:300;font-style:italic;border-left:2px solid var(--gold-border);padding-left:1rem;margin-bottom:1.1rem">Every system on this page was built independently, without a dedicated team or a formal mandate.</p>
+        <p style="font-size:0.95rem;color:var(--text2);line-height:1.85;font-weight:300;margin-bottom:1.1rem">I own projects end to end. I document everything so the work survives my absence.</p>
         <p style="font-size:0.95rem;color:var(--text2);line-height:1.85;font-weight:300;margin-bottom:1.1rem">Outside of work I have two cats with strong opinions, travel whenever possible, and a spreadsheet that is genuinely never closed.</p>
         <div style="margin-top:0.5rem">
           <button class="btn-fun" id="fun-btn" onclick="rotateFun()">Something about me</button>
@@ -413,7 +410,7 @@ footer{border-top:1px solid var(--border);padding:1.75rem clamp(1.5rem,5vw,3.5re
     <div class="label fade">Blog</div>
     <div class="fade" style="display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin-bottom:2rem">
       <h2 class="sec-title" style="margin-bottom:0">Things worth <em>writing down</em></h2>
-      <a href="https://substack.com/@theknownissues" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.5rem 1.1rem;border:1px solid var(--gold-border);border-radius:100px;color:var(--gold);font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;font-family:'DM Sans',sans-serif;font-weight:500;transition:all 0.2s;white-space:nowrap" onmouseover="this.style.background='rgba(201,168,76,0.1)'" onmouseout="this.style.background='transparent'">
+      <a href="https://substack.com/@theknownissues" target="_blank" rel="noopener" class="btn-substack">
         <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/></svg>
         Follow on Substack
       </a>
@@ -434,7 +431,7 @@ footer{border-top:1px solid var(--border);padding:1.75rem clamp(1.5rem,5vw,3.5re
         <div class="blog-footer"><span class="blog-status" style="color:var(--gold)">Read on Substack &rarr;</span></div>
       </div>
 
-      <div class="blog-card" style="cursor:pointer" onclick="window.open('https://open.substack.com/pub/theknownissues/p/goodharts-law-is-the-only-management?r=7vey64&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true','_blank')">
+      <div class="blog-card" style="cursor:pointer" onclick="window.open('https://open.substack.com/pub/theknownissues/p/goodharts-law-is-the-only-management?utm_campaign=post-expanded-share&utm_medium=post%20viewer','_blank')">
         <div class="blog-tag">Metrics</div>
         <div class="blog-title">Goodhart's Law Is the Only Management Theory You Actually Need</div>
         <div class="blog-desc">When a measure becomes a target it stops being a good measure. Soviet factories were once judged by the number of nails produced. So they produced millions of tiny useless nails. I have seen the modern equivalent. It did not involve nails.</div>
@@ -443,19 +440,7 @@ footer{border-top:1px solid var(--border);padding:1.75rem clamp(1.5rem,5vw,3.5re
 
     </div>
 
-    <div class="blog-more-wrap" id="blog-more-wrap">
-      <div class="blog-grid blog-hidden" id="blog-extra">
 
-        <div class="blog-card" style="cursor:pointer" onclick="window.open('https://substack.com/@theknownissues','_blank')">
-          <div class="blog-tag">Operations</div>
-          <div class="blog-title">A Field Guide to Processes That Were Never Actually Written Down</div>
-          <div class="blog-desc">How to audit, map, and rebuild workflows that exist entirely inside one person's head. And what happens when that person goes on vacation.</div>
-          <div class="blog-footer"><span class="blog-status">In queue &middot; theknownissues</span></div>
-        </div>
-
-      </div>
-      <button id="blog-toggle" onclick="toggleBlog()">Show more</button>
-    </div>
 
   </div>
 </section>
@@ -468,12 +453,12 @@ footer{border-top:1px solid var(--border);padding:1.75rem clamp(1.5rem,5vw,3.5re
     <h2 class="sec-title fade">Things I have <em>built</em></h2>
 
     <div class="proj-filters fade">
-      <button class="proj-filter-btn active" onclick="filterProj('automation',this)">Automation</button>
-      <button class="proj-filter-btn" onclick="filterProj('process',this)">Process Improvement</button>
-      <button class="proj-filter-btn" onclick="filterProj('data',this)">Data &amp; Analytics</button>
-      <button class="proj-filter-btn" onclick="filterProj('financial',this)">Financial Ops</button>
-      <button class="proj-filter-btn" onclick="filterProj('systems',this)">Systems</button>
-      <button class="proj-filter-btn" onclick="filterProj('all',this)">All</button>
+      <button class="proj-filter-btn active" onclick="filterProj('automation',this)">Automation <span class="proj-filter-count">(5)</span></button>
+      <button class="proj-filter-btn" onclick="filterProj('process',this)">Process Improvement <span class="proj-filter-count">(4)</span></button>
+      <button class="proj-filter-btn" onclick="filterProj('data',this)">Data &amp; Analytics <span class="proj-filter-count">(4)</span></button>
+      <button class="proj-filter-btn" onclick="filterProj('financial',this)">Financial Ops <span class="proj-filter-count">(1)</span></button>
+      <button class="proj-filter-btn" onclick="filterProj('systems',this)">Systems <span class="proj-filter-count">(5)</span></button>
+      <button class="proj-filter-btn" onclick="filterProj('all',this)">All <span class="proj-filter-count">(19)</span></button>
     </div>
 
     <div class="projects-grid fade">
@@ -698,7 +683,7 @@ footer{border-top:1px solid var(--border);padding:1.75rem clamp(1.5rem,5vw,3.5re
           <div class="star-row"><div class="star-hd"><span class="star-letter">S</span><span class="star-lbl">Situation</span></div><p class="star-content">One role had quietly absorbed responsibilities from multiple sources with no documentation or compensation adjustment to reflect the actual scope.</p></div>
           <div class="star-row"><div class="star-hd"><span class="star-letter">T</span><span class="star-lbl">Task</span></div><p class="star-content">Build an executive-ready analysis comparing written job description to actual responsibilities across three functional areas.</p></div>
           <div class="star-row"><div class="star-hd"><span class="star-letter">A</span><span class="star-lbl">Action</span></div><p class="star-content">Developed a capacity model with weekly hour breakdowns, task classification, and scenario planning packaged into an exec presentation.</p></div>
-          <div class="star-row"><div class="star-hd"><span class="star-letter">R</span><span class="star-lbl">Result</span></div><p class="star-content">Delivered a data-backed executive presentation quantifying scope across three functional areas, giving leadership clear, measurable visibility into role capacity and resource allocation.</p></div>
+          <div class="star-row"><div class="star-hd"><span class="star-letter">R</span><span class="star-lbl">Result</span></div><p class="star-content">Delivered a data-backed executive presentation quantifying scope across three functional areas, directly informing a compensation and headcount review with leadership.</p></div>
           <div class="proj-tools"><span class="tool-chip tc-data">Excel</span><span class="tool-chip tc-process">Lucidchart</span><span class="tool-chip tc-process">Lean Six Sigma</span><span class="tool-chip tc-automation">Word</span></div>
         </div>
       </div>
@@ -771,7 +756,7 @@ footer{border-top:1px solid var(--border);padding:1.75rem clamp(1.5rem,5vw,3.5re
             <div class="proj-meta-cell"><div class="proj-meta-label">Impact</div><div class="proj-meta-val">Centralized 55+ devices across 4 carriers</div></div>
           </div>
           <div class="star-row"><div class="star-hd"><span class="star-letter">S</span><span class="star-lbl">Situation</span></div><p class="star-content">Device management across 55+ devices and 4 carriers lacked centralized control, creating inconsistent configurations and manual overhead.</p></div>
-          <div class="star-row"><div class="star-hd"><span class="star-letter">T</span><span class="star-lbl">Task</span></div><p class="star-content">Assist with the Apple Business Manager implementation and optimize the multi-carrier mobile setup.</p></div>
+          <div class="star-row"><div class="star-hd"><span class="star-letter">T</span><span class="star-lbl">Task</span></div><p class="star-content">Lead the Apple Business Manager implementation end to end and optimize the multi-carrier mobile setup.</p></div>
           <div class="star-row"><div class="star-hd"><span class="star-letter">A</span><span class="star-lbl">Action</span></div><p class="star-content">Led end-to-end rollout, coordinated multi-carrier optimization, and delivered carrier cost recommendations to IT leadership.</p></div>
           <div class="star-row"><div class="star-hd"><span class="star-letter">R</span><span class="star-lbl">Result</span></div><p class="star-content">Centralized device management and reduced manual configuration overhead across the organization.</p></div>
           <div class="proj-tools"><span class="tool-chip tc-automation">Apple Business Manager</span><span class="tool-chip tc-automation">MDM</span><span class="tool-chip tc-data">Excel</span></div>
@@ -803,7 +788,155 @@ footer{border-top:1px solid var(--border);padding:1.75rem clamp(1.5rem,5vw,3.5re
         </div>
       </div>
 
-    </div>
+      <div class="proj" data-cat="automation" onclick="toggleProj(this)">
+        <div class="proj-header">
+          <div>
+            <div class="proj-badges"><span class="proj-status-badge complete">Complete</span><span class="proj-date">2024&ndash;2025 &middot; Food Distribution / Mid-Market</span></div>
+            <div class="proj-cat">Automation</div>
+            <div class="proj-name">T-Mobile Cost Center Bill Processor</div>
+            <div class="proj-preview">Built an automated Excel workbook that eliminated manual telecom cost allocation, saving 2 hours of finance work every month.</div>
+          </div>
+          <span class="proj-toggle" role="button" aria-expanded="false">+</span>
+        </div>
+        <div class="proj-body">
+          <div class="proj-meta">
+            <div class="proj-meta-cell"><div class="proj-meta-label">Technology</div><div class="proj-meta-val">Excel, Office Scripts</div></div>
+            <div class="proj-meta-cell"><div class="proj-meta-label">Stakeholders</div><div class="proj-meta-val">Finance, Operations</div></div>
+            <div class="proj-meta-cell"><div class="proj-meta-label">Focus</div><div class="proj-meta-val">Billing Automation</div></div>
+            <div class="proj-meta-cell"><div class="proj-meta-label">Impact</div><div class="proj-meta-val">2 hours saved monthly &middot; zero manual allocation</div></div>
+          </div>
+          <div class="star-row"><div class="star-hd"><span class="star-letter">S</span><span class="star-lbl">Situation</span></div><p class="star-content">Monthly T-Mobile bills required manual review and cost allocation across multiple cost centers with no structured process for splitting charges or producing a clean report for finance.</p></div>
+          <div class="star-row"><div class="star-hd"><span class="star-letter">T</span><span class="star-lbl">Task</span></div><p class="star-content">Build a workbook that processed the bill, allocated charges by cost center, and produced output ready for finance review without manual sorting.</p></div>
+          <div class="star-row"><div class="star-hd"><span class="star-letter">A</span><span class="star-lbl">Action</span></div><p class="star-content">Built an Excel workbook with Office Script automation that parsed the bill, applied cost center allocation logic, and generated a formatted output sheet for finance submission.</p></div>
+          <div class="star-row"><div class="star-hd"><span class="star-letter">R</span><span class="star-lbl">Result</span></div><p class="star-content">Eliminated manual cost allocation for monthly telecom billing, saving 2 hours of finance time each month.</p></div>
+          <div class="proj-tools"><span class="tool-chip tc-data">Excel</span><span class="tool-chip tc-automation">Office Scripts</span><span class="tool-chip tc-finance">Cost Allocation</span></div>
+        </div>
+      </div>
+
+      <div class="proj" data-cat="systems" onclick="toggleProj(this)">
+        <div class="proj-header">
+          <div>
+            <div class="proj-badges"><span class="proj-status-badge ongoing">Ongoing</span><span class="proj-date">2024&ndash;2025 &middot; Food Distribution / Mid-Market</span></div>
+            <div class="proj-cat">Systems</div>
+            <div class="proj-name">Phone and Hotspot Asset Tracker</div>
+            <div class="proj-preview">Centralized 80 phones and hotspots across multiple carriers into a single managed workbook, replacing manual carrier-by-carrier lookups entirely.</div>
+          </div>
+          <span class="proj-toggle" role="button" aria-expanded="false">+</span>
+        </div>
+        <div class="proj-body">
+          <div class="proj-meta">
+            <div class="proj-meta-cell"><div class="proj-meta-label">Technology</div><div class="proj-meta-val">Excel, Office Scripts</div></div>
+            <div class="proj-meta-cell"><div class="proj-meta-label">Stakeholders</div><div class="proj-meta-val">IT Leadership, Finance</div></div>
+            <div class="proj-meta-cell"><div class="proj-meta-label">Focus</div><div class="proj-meta-val">Asset Tracking</div></div>
+            <div class="proj-meta-cell"><div class="proj-meta-label">Impact</div><div class="proj-meta-val">80 devices centralized across all carriers</div></div>
+          </div>
+          <div class="star-row"><div class="star-hd"><span class="star-letter">S</span><span class="star-lbl">Situation</span></div><p class="star-content">80 phones and hotspots across multiple carriers had no centralized tracking system, making it difficult to monitor assignments, costs, or device status without manually checking each carrier.</p></div>
+          <div class="star-row"><div class="star-hd"><span class="star-letter">T</span><span class="star-lbl">Task</span></div><p class="star-content">Build a tracking workbook that centralized all device records and made ongoing management straightforward for both IT and finance.</p></div>
+          <div class="star-row"><div class="star-hd"><span class="star-letter">A</span><span class="star-lbl">Action</span></div><p class="star-content">Built an Excel-based tracking system with data validation dropdowns, cost center splits, and a structured layout covering all 80 devices and hotspots across carriers.</p></div>
+          <div class="star-row"><div class="star-hd"><span class="star-letter">R</span><span class="star-lbl">Result</span></div><p class="star-content">Centralized visibility across 80 devices and hotspots, replacing manual carrier-by-carrier lookups with a single managed record.</p></div>
+          <div class="proj-tools"><span class="tool-chip tc-data">Excel</span><span class="tool-chip tc-automation">Office Scripts</span><span class="tool-chip tc-automation">Data Validation</span></div>
+        </div>
+      </div>
+
+      <div class="proj" data-cat="process" onclick="toggleProj(this)">
+        <div class="proj-header">
+          <div>
+            <div class="proj-badges"><span class="proj-status-badge complete">Complete</span><span class="proj-date">2025 &middot; Food Distribution / Mid-Market</span></div>
+            <div class="proj-cat">Process Improvement</div>
+            <div class="proj-name">IT Policy Revision and Change Audit</div>
+            <div class="proj-preview">Audited two versions of a company-wide IT policy end to end, built a color-coded change tracking system, and produced a plain-language executive summary ready for broad distribution.</div>
+          </div>
+          <span class="proj-toggle" role="button" aria-expanded="false">+</span>
+        </div>
+        <div class="proj-body">
+          <div class="proj-meta">
+            <div class="proj-meta-cell"><div class="proj-meta-label">Technology</div><div class="proj-meta-val">Word, Document Comparison</div></div>
+            <div class="proj-meta-cell"><div class="proj-meta-label">Stakeholders</div><div class="proj-meta-val">IT Leadership, Executive Team, All Departments</div></div>
+            <div class="proj-meta-cell"><div class="proj-meta-label">Focus</div><div class="proj-meta-val">Policy Documentation, Change Management</div></div>
+            <div class="proj-meta-cell"><div class="proj-meta-label">Impact</div><div class="proj-meta-val">Distribution-ready &middot; pending executive approval</div></div>
+          </div>
+          <div class="star-row"><div class="star-hd"><span class="star-letter">S</span><span class="star-lbl">Situation</span></div><p class="star-content">The existing IT policy had not been formally audited since its original version, and the current revision had accumulated edits across multiple contributors with no unified change tracking or plain-language summary for company-wide distribution.</p></div>
+          <div class="star-row"><div class="star-hd"><span class="star-letter">T</span><span class="star-lbl">Task</span></div><p class="star-content">Conduct a full highlight and change audit comparing the original against the revised version, resolve inconsistencies, and produce an executive summary suitable for non-technical audiences across the organization.</p></div>
+          <div class="star-row"><div class="star-hd"><span class="star-letter">A</span><span class="star-lbl">Action</span></div><p class="star-content">Audited both documents end to end, built a three-category color-coded change tracking system, identified over-applied and missing highlights, flagged unresolved open items requiring stakeholder decisions, and produced a plain-language executive summary for broad distribution.</p></div>
+          <div class="star-row"><div class="star-hd"><span class="star-letter">R</span><span class="star-lbl">Result</span></div><p class="star-content">Delivered a complete audit, structured change log, and distribution-ready executive summary. Document was pending final notes and executive approval at time of departure.</p></div>
+          <div class="proj-tools"><span class="tool-chip tc-automation">Word</span><span class="tool-chip tc-process">Change Management</span><span class="tool-chip tc-process">Policy Documentation</span></div>
+        </div>
+      </div>
+
+      <div class="proj" data-cat="systems" onclick="toggleProj(this)">
+        <div class="proj-header">
+          <div>
+            <div class="proj-badges"><span class="proj-status-badge ongoing">Ongoing</span><span class="proj-date">2025&ndash;Present &middot; Retail / SMB</span></div>
+            <div class="proj-cat">Systems</div>
+            <div class="proj-name">Digital Presence and Operations Build</div>
+            <div class="proj-preview">Built a complete digital foundation from scratch for a retail client with no existing web presence, including site build, SEO audit, and intake workflow documentation.</div>
+          </div>
+          <span class="proj-toggle" role="button" aria-expanded="false">+</span>
+        </div>
+        <div class="proj-body">
+          <div class="proj-meta">
+            <div class="proj-meta-cell"><div class="proj-meta-label">Technology</div><div class="proj-meta-val">HTML, CSS, Cloudflare, SEO Analysis</div></div>
+            <div class="proj-meta-cell"><div class="proj-meta-label">Stakeholders</div><div class="proj-meta-val">Business Owner</div></div>
+            <div class="proj-meta-cell"><div class="proj-meta-label">Focus</div><div class="proj-meta-val">Web Build, SEO, Workflow Documentation</div></div>
+            <div class="proj-meta-cell"><div class="proj-meta-label">Impact</div><div class="proj-meta-val">First digital presence &middot; SEO and workflows in progress</div></div>
+          </div>
+          <div class="star-row"><div class="star-hd"><span class="star-letter">S</span><span class="star-lbl">Situation</span></div><p class="star-content">A small retail client had no existing website, no digital presence, and no documented workflows for client or visitor intake. Everything operated informally with no repeatable process in place.</p></div>
+          <div class="star-row"><div class="star-hd"><span class="star-letter">T</span><span class="star-lbl">Task</span></div><p class="star-content">Build a complete digital foundation from scratch, covering both the public-facing site and the internal workflows needed to support it.</p></div>
+          <div class="star-row"><div class="star-hd"><span class="star-letter">A</span><span class="star-lbl">Action</span></div><p class="star-content">Designed and built a static HTML site deployed via Cloudflare, conducted a full SEO audit covering keyword targeting and meta structure, and began mapping intake workflows to establish repeatable processes where none existed.</p></div>
+          <div class="star-row"><div class="star-hd"><span class="star-letter">R</span><span class="star-lbl">Result</span></div><p class="star-content">Site build complete and in deployment. SEO audit and workflow documentation underway.</p></div>
+          <div class="proj-tools"><span class="tool-chip tc-automation">HTML</span><span class="tool-chip tc-automation">CSS</span><span class="tool-chip tc-automation">Cloudflare</span><span class="tool-chip tc-process">SEO</span><span class="tool-chip tc-process">Workflow Mapping</span></div>
+        </div>
+      </div>
+
+      <div class="proj" data-cat="data" onclick="toggleProj(this)">
+        <div class="proj-header">
+          <div>
+            <div class="proj-badges"><span class="proj-status-badge complete">Complete</span><span class="proj-date">2025 &middot; Retail / SMB</span></div>
+            <div class="proj-cat">Data &amp; Analytics</div>
+            <div class="proj-name">Retail Sales and Inventory Dashboard</div>
+            <div class="proj-preview">Built a self-serve Power BI dashboard giving a retail client real-time visibility into revenue by category, inventory turnover, and monthly trends without any manual reporting.</div>
+          </div>
+          <span class="proj-toggle" role="button" aria-expanded="false">+</span>
+        </div>
+        <div class="proj-body">
+          <div class="proj-meta">
+            <div class="proj-meta-cell"><div class="proj-meta-label">Technology</div><div class="proj-meta-val">Power BI, Excel</div></div>
+            <div class="proj-meta-cell"><div class="proj-meta-label">Stakeholders</div><div class="proj-meta-val">Business Owner</div></div>
+            <div class="proj-meta-cell"><div class="proj-meta-label">Focus</div><div class="proj-meta-val">Sales Reporting, Inventory Visibility</div></div>
+            <div class="proj-meta-cell"><div class="proj-meta-label">Impact</div><div class="proj-meta-val">Replaced manual monthly reporting entirely</div></div>
+          </div>
+          <div class="star-row"><div class="star-hd"><span class="star-letter">S</span><span class="star-lbl">Situation</span></div><p class="star-content">A small retail client had no visibility into sales performance or inventory movement across product categories. Reporting was done manually and inconsistently each month.</p></div>
+          <div class="star-row"><div class="star-hd"><span class="star-letter">T</span><span class="star-lbl">Task</span></div><p class="star-content">Build a dashboard that gave the owner a clear view of revenue trends, top-performing categories, and inventory turnover without requiring manual compilation each month.</p></div>
+          <div class="star-row"><div class="star-hd"><span class="star-letter">A</span><span class="star-lbl">Action</span></div><p class="star-content">Built a Power BI dashboard pulling from an Excel data source, with views covering monthly revenue by category, inventory turnover rate, and a running sales trend line. Designed for a non-technical owner to update and read independently.</p></div>
+          <div class="star-row"><div class="star-hd"><span class="star-letter">R</span><span class="star-lbl">Result</span></div><p class="star-content">Replaced manual monthly reporting with a self-serve dashboard the client updates and reads without assistance.</p></div>
+          <div class="proj-tools"><span class="tool-chip tc-data">Power BI</span><span class="tool-chip tc-data">Excel</span><span class="tool-chip tc-finance">Financial Reporting</span></div>
+        </div>
+      </div>
+
+      <div class="proj" data-cat="data" onclick="toggleProj(this)">
+        <div class="proj-header">
+          <div>
+            <div class="proj-badges"><span class="proj-status-badge ongoing">Ongoing</span><span class="proj-date">2025&ndash;Present &middot; Retail / SMB</span></div>
+            <div class="proj-cat">Data &amp; Analytics</div>
+            <div class="proj-name">Marketing Performance Dashboard</div>
+            <div class="proj-preview">Built a Power BI dashboard consolidating organic search performance, keyword rankings, and page-level traffic to track the impact of an ongoing SEO build.</div>
+          </div>
+          <span class="proj-toggle" role="button" aria-expanded="false">+</span>
+        </div>
+        <div class="proj-body">
+          <div class="proj-meta">
+            <div class="proj-meta-cell"><div class="proj-meta-label">Technology</div><div class="proj-meta-val">Power BI, Google Search Console</div></div>
+            <div class="proj-meta-cell"><div class="proj-meta-label">Stakeholders</div><div class="proj-meta-val">Business Owner</div></div>
+            <div class="proj-meta-cell"><div class="proj-meta-label">Focus</div><div class="proj-meta-val">SEO Performance, Traffic Analysis</div></div>
+            <div class="proj-meta-cell"><div class="proj-meta-label">Impact</div><div class="proj-meta-val">In progress &middot; data populating as site indexes</div></div>
+          </div>
+          <div class="star-row"><div class="star-hd"><span class="star-letter">S</span><span class="star-lbl">Situation</span></div><p class="star-content">A client launching a new web presence had no way to track whether SEO and content efforts were producing measurable traffic or engagement results.</p></div>
+          <div class="star-row"><div class="star-hd"><span class="star-letter">T</span><span class="star-lbl">Task</span></div><p class="star-content">Build a dashboard consolidating organic search performance, page-level traffic, and keyword ranking data into a single view for ongoing monitoring.</p></div>
+          <div class="star-row"><div class="star-hd"><span class="star-letter">A</span><span class="star-lbl">Action</span></div><p class="star-content">Built a Power BI dashboard pulling from Google Search Console data, tracking impressions, clicks, average position by keyword, and page performance trends. Set up to update automatically as new data comes in.</p></div>
+          <div class="star-row"><div class="star-hd"><span class="star-letter">R</span><span class="star-lbl">Result</span></div><p class="star-content">Dashboard framework complete with data populating as the site indexes. Ongoing alongside the broader digital presence build.</p></div>
+          <div class="proj-tools"><span class="tool-chip tc-data">Power BI</span><span class="tool-chip tc-data">Google Search Console</span><span class="tool-chip tc-process">SEO Analysis</span></div>
+        </div>
+      </div>
   </div>
 </section>
 
@@ -889,8 +1022,8 @@ footer{border-top:1px solid var(--border);padding:1.75rem clamp(1.5rem,5vw,3.5re
       </div>
       <div>
         <div class="cert-edu-col-label">Recognition</div>
-        <div class="cert-recog-item"><span class="cert-recog-dot"></span><span class="cert-recog-text"><strong style="color:var(--text);font-weight:500">ELP Learning Award, Q3 2024</strong> &mdash; Recognized for continuously building new skills, applying lessons learned, and using problem-solving to deliver stronger results.</span></div>
-        <div class="cert-recog-item" style="margin-top:0.6rem"><span class="cert-recog-dot"></span><span class="cert-recog-text"><strong style="color:var(--text);font-weight:500">ELP Initiative Award, Q2 2025</strong> &mdash; Recognized for identifying issues, proposing solutions, and improving processes without waiting for direction.</span></div>
+        <div class="cert-recog-item"><span class="cert-recog-dot"></span><span class="cert-recog-text"><strong style="color:var(--text);font-weight:500">ELP Learning Award, Q3 2024</strong> &middot; Recognized for continuously building new skills, applying lessons learned, and using problem-solving to deliver stronger results.</span></div>
+        <div class="cert-recog-item" style="margin-top:0.6rem"><span class="cert-recog-dot"></span><span class="cert-recog-text"><strong style="color:var(--text);font-weight:500">ELP Initiative Award, Q2 2025</strong> &middot; Recognized for identifying issues, proposing solutions, and improving processes without waiting for direction.</span></div>
       </div>
     </div>
 
@@ -985,11 +1118,11 @@ footer{border-top:1px solid var(--border);padding:1.75rem clamp(1.5rem,5vw,3.5re
 
 <section id="contact">
   <div class="wrap">
-    <div class="label fade">Contact &amp; Freelance</div>
+    <div class="label fade">Contact</div>
     <h2 class="sec-title fade">Got something <em>broken?</em><br>Let's fix it.</h2>
     <div class="contact-grid fade">
       <div>
-        <p class="contact-intro">Open to full-time remote roles in Business Operations, Process Improvement, or RevOps. I also take on freelance projects such as workflow automation, operations cleanup, AP and AR setup, SharePoint builds, and Excel dashboards. If the problem does not have a clean name yet, those are usually the most interesting ones.</p>
+        <p class="contact-intro">Open to full-time remote roles in Business Operations, Process Improvement, or RevOps. If the problem does not have a clean name yet, those are usually the most interesting ones.</p>
         <div class="contact-options">
           <a href="/cdn-cgi/l/email-protection#a4c9c5c0c0cdc18ad6cbc7cccbd2c5cad7cfdde4c5d0cbc9cdc7c9c5cdc88acdcb" class="contact-opt">
             <div class="contact-opt-icon">@</div>
@@ -1011,16 +1144,6 @@ footer{border-top:1px solid var(--border);padding:1.75rem clamp(1.5rem,5vw,3.5re
           </button>
         </div>
       </div>
-      <div>
-        <div style="font-size:0.65rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--text3);font-weight:500;margin-bottom:1rem">Available for</div>
-        <div class="services-list">
-          <div class="service"><div class="service-name">Workflow Automation</div><div class="service-desc">Power Automate flows, Excel automation, Office Scripts, VBA, scheduled reporting for repetitive tasks</div></div>
-          <div class="service"><div class="service-name">Operations Cleanup</div><div class="service-desc">End-to-end workflow review, document processes, process maps, identify bottlenecks, build SOPs, training materials with improvement recommendations</div></div>
-          <div class="service"><div class="service-name">Finance Operations Support</div><div class="service-desc">AP/AR cleanup, invoice processing systems, reconciliation templates, vendor management frameworks</div></div>
-          <div class="service"><div class="service-name">Excel &amp; Reporting</div><div class="service-desc">Custom dashboards, financial reports, and data models</div></div>
-          <div class="service"><div class="service-name">SharePoint &amp; Microsoft 365</div><div class="service-desc">Intranet setup, document management, Teams integration, license tracking</div></div>
-        </div>
-      </div>
     </div>
   </div>
 </section>
@@ -1035,6 +1158,7 @@ footer{border-top:1px solid var(--border);padding:1.75rem clamp(1.5rem,5vw,3.5re
     <a href="https://substack.com/@theknownissues" target="_blank" rel="noopener">Substack</a>
     <a href="https://maddierochovansky.com/madison_rochovansky_resume.pdf" target="_blank" rel="noopener">Resume</a>
     <a href="https://cal.com/rochovanskym/phone-call" target="_blank" rel="noopener">Book a Call</a>
+    <a href="/work-with-me">Work With Me</a>
   </div>
 </footer>
 
@@ -1064,6 +1188,7 @@ footer{border-top:1px solid var(--border);padding:1.75rem clamp(1.5rem,5vw,3.5re
           <textarea id="cf-message" name="message" rows="5" placeholder="Your message..." autocomplete="off" required></textarea>
         </div>
         <button type="submit" class="form-submit">Send Message</button>
+        <div id="form-error" style="display:none;margin-top:0.75rem;font-size:0.78rem;color:#f87171;text-align:center">Something went wrong. Try emailing directly at maddie.rochovansky@atomicmail.io</div>
       </form>
     </div>
     <div class="form-success" id="form-success">
@@ -1172,18 +1297,6 @@ footer{border-top:1px solid var(--border);padding:1.75rem clamp(1.5rem,5vw,3.5re
     var isOpen=el.classList.toggle('open');
     var hdr=el.querySelector('.cert-group-header');
     if(hdr)hdr.setAttribute('aria-expanded',isOpen);
-  }
-  function toggleBlog(){
-    var wrap=document.getElementById('blog-more-wrap');
-    var btn=document.getElementById('blog-toggle');
-    var isOpen=wrap.classList.contains('expanded');
-    if(isOpen){
-      wrap.classList.remove('expanded');
-      btn.textContent='Show more';
-    } else {
-      wrap.classList.add('expanded');
-      btn.textContent='Show less';
-    }
   }
   var scrollTopBtn=document.getElementById('scroll-top');
   window.addEventListener('scroll',function(){
@@ -1358,7 +1471,7 @@ footer{border-top:1px solid var(--border);padding:1.75rem clamp(1.5rem,5vw,3.5re
       [/work auth|visa|sponsor|eligible|authorized|citizen|us work/,"Authorized to work in the US. No sponsorship needed."],
       [/location|where.*based|remote|\bnj\b|new jersey/,"Based in New Jersey. Looking for remote work, open to anywhere."],
       [/salary|rate|pay|compensation|how much/,"Happy to discuss specifics directly. I have a number in mind and it is reasonable. maddie.rochovansky@atomicmail.io"],
-      [/freelance|consult|hire.*for|available.*project/,"Open to select freelance: workflow automation, operations cleanup, AP and AR setup, SharePoint builds, Excel dashboards, SOP documentation. If the problem does not have a clean name yet, those are usually the most interesting ones. The Contact & Freelance section at the bottom of the page has the full list."],
+      [/freelance|consult|hire.*for|available.*project/,"Open to select freelance: workflow automation, operations cleanup, AP and AR setup, SharePoint builds, Excel dashboards, web builds, and SEO. If the problem does not have a clean name yet, those are usually the most interesting ones. The Work With Me page has the full breakdown."],
       [/contact|email|reach|get in touch/,"maddie.rochovansky@atomicmail.io or the contact form at the bottom of the page. If you want to skip the email chain: cal.com/rochovanskym/30min"],
       [/book|call|schedule|calendar|cal\.com|meeting/,"cal.com/rochovanskym/30min. Thirty minutes, no agenda required."],
       [/linkedin/,"linkedin.com/in/maddie-rochovansky"],
@@ -1369,7 +1482,7 @@ footer{border-top:1px solid var(--border);padding:1.75rem clamp(1.5rem,5vw,3.5re
       [/cats|pets|\bcat\b/,"Griffith is senior staff with opinions about the thermostat. Charlotte is chaos in a small body. Both are currently in management and unavailable for comment."],
       [/travel|europe|van gogh|amsterdam/,"All over Europe, ideally. Different cities, different art museums, as much of it as possible. There is no shortage of places on the list."],
       [/read|book|reading|night of the grizzl/,"Currently reading Night of the Grizzlies. Two fatal grizzly attacks in Glacier National Park in one night in 1967. It is a true story and somehow that makes it worse."],
-      [/blog|writing|post|article/,"Four articles in the works, published on Substack at theknownissues. Organizational culture, SOPs that have been patched beyond recognition, Goodhart's Law in management, and a guide to undocumented processes. First one publishing soon. Blog section has the previews."],
+      [/blog|writing|post|article/,"Three articles published on Substack at theknownissues: organizational dysfunction through the Universe 25 experiment, SOP drift through the Ship of Theseus, and Goodhart's Law in management. More in the works. Blog section has all of them."],
       [/boring|lame|dull|not funny/,"Fair. There are limits to what a chatbot on a portfolio site can do. The person behind this is considerably more interesting."],
     ];
     for(var i=0;i<rules.length;i++){
@@ -1395,8 +1508,10 @@ footer{border-top:1px solid var(--border);padding:1.75rem clamp(1.5rem,5vw,3.5re
     e.preventDefault();
     var form=this;
     var btn=form.querySelector('.form-submit');
+    var errEl=document.getElementById('form-error');
     if(btn.disabled)return;
     btn.textContent='Sending...';btn.disabled=true;
+    if(errEl)errEl.style.display='none';
     fetch('https://formspree.io/f/xvzwovee',{
       method:'POST',
       headers:{'Accept':'application/json'},
@@ -1408,11 +1523,11 @@ footer{border-top:1px solid var(--border);padding:1.75rem clamp(1.5rem,5vw,3.5re
         form.reset();
       } else {
         btn.textContent='Send Message';btn.disabled=false;
-        alert('Something went wrong. Please try emailing directly.');
+        if(errEl)errEl.style.display='block';
       }
     }).catch(function(){
       btn.textContent='Send Message';btn.disabled=false;
-      alert('Something went wrong. Please try emailing directly.');
+      if(errEl)errEl.style.display='block';
     });
   });
   var funPhrases=[
@@ -1467,9 +1582,38 @@ footer{border-top:1px solid var(--border);padding:1.75rem clamp(1.5rem,5vw,3.5re
   window.toggleProj=toggleProj;
   window.toggleCert=toggleCert;
   window.toggleChat=toggleChat;
-  window.toggleBlog=toggleBlog;
   window.askSuggestion=askSuggestion;
   window.sendChat=sendChat;
+
+  // Escape key closes modal
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape'){
+      closeModal();
+      var panel=document.getElementById('chat-panel');
+      if(panel.classList.contains('open'))panel.classList.remove('open');
+    }
+  });
+
+  // Close mobile menu on scroll
+  window.addEventListener('scroll',function(){
+    var m=document.getElementById('mob-menu');
+    if(m.classList.contains('open'))m.classList.remove('open');
+  },{passive:true});
+
+  // Active nav highlight on scroll
+  var sections=document.querySelectorAll('section[id]');
+  var navLinks=document.querySelectorAll('.nav-links a[href^="#"]');
+  var navObs=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){
+        var id=e.target.getAttribute('id');
+        navLinks.forEach(function(a){
+          a.classList.toggle('nav-active',a.getAttribute('href')==='#'+id);
+        });
+      }
+    });
+  },{threshold:0.25,rootMargin:'-60px 0px -40% 0px'});
+  sections.forEach(function(s){navObs.observe(s);});
 })();
 </script>
 </body>
